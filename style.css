@@ -86,15 +86,118 @@ form p {
   
 
 /* Estilos Main*/
+.intro{
+    display: flex;
+    height: 30vh;
+    padding: 3vw;
+    margin-right: 5vw;
+    margin-left: 5vw;
+    text-align: justify;
+    
+    font-size: 3vh;
+}
+
+.intro h2{
+    padding-right: 3vw;
+}
+
+#beneficios{
+    width: 80%;
+    margin: 0 auto;
+}
+
+#beneficios h2 {
+    background-color: var(--secondary);
+    text-align: center;
+    padding: 2em;
+    font-weight: 600;
+  }
+  
+.beneficios {
+    display: flex;
+    justify-content: space-around;
+    padding: 4em;
+    width: 80%;
+    gap: 2vw;
+    margin: 0 auto;
+}
+  
+.beneficio {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 30%;
+    color: var(--text-tertiary);
+}
+
+.beneficio p{
+    padding-top: 2vh;
+}
+  
+.beneficio img {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 1em;
+}
 
 
+#quartos {
+    width: 80%;
+    margin: 0 auto;
+}
 
+#quartos h2 {
+    background-color: var(--secondary);
+    text-align: center;
+    padding: 2em;
+    font-weight: 600;
+    margin-bottom: 2em;
+}
+  
+.quarto {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 5%;
+    margin-bottom: 4em;
+}
+  
+.quarto img {
+    width: 40%;
+}
+
+.quarto h3 {
+    margin-bottom: 1em;
+    font-size: 2em;
+    font-weight: 500;
+}
+
+.quartosDescricao {
+    width: 100%;
+    padding-left: 2em;
+}
+
+.quartosDescricao ul {
+    list-style-position: inside;
+}
+  
+.quartosDescricao ul li {
+    margin-bottom: 0.4em;
+}
+  
 
 
 /* Estilos footer*/
-footer{
-    height: 20vh;
-    display: grid;
+footer {
+    text-align: center;
+    color: var(--secondary);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .redes-sociais{ 
@@ -102,10 +205,9 @@ footer{
     align-items: center;
     text-align: center;
     background-color: var(--primary);
-    height: 6vh;
+    height: 7vh;
     width: 100%;
     display: flex;
-    position: fixed;
     bottom: 0;
     justify-content: center;
     align-content: end;
@@ -121,15 +223,6 @@ footer{
 .redes-sociais img:hover{
     opacity: 1;
 }
-
-
-
-
-
-
-
-
-
 
 
 
