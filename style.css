@@ -93,7 +93,6 @@ form p {
     margin-right: 5vw;
     margin-left: 5vw;
     text-align: justify;
-    
     font-size: 3vh;
 }
 
@@ -188,8 +187,7 @@ form p {
 .quartosDescricao ul li {
     margin-bottom: 0.4em;
 }
-  
-
+ 
 
 /* Estilos footer*/
 footer {
@@ -223,7 +221,6 @@ footer {
 .redes-sociais img:hover{
     opacity: 1;
 }
-
 
 
 /* Estilos responsividade - MANTER NO FINAL  */
@@ -260,6 +257,56 @@ footer {
     }
 
     .slogan{
+        text-align: center;
         height: 100%;
     }
+
+    .intro{
+        height: 100%;
+        flex-direction: column;
+        align-items: center;
+        width: auto;
+        padding: 2em;
+    }
+
+    .beneficios {
+        flex-direction: column;
+        align-items: center;
+        width: auto;
+        padding: 2em;
+    }
+    
+    .beneficio {
+        max-width: 100%;
+        margin-bottom: 2em;
+    }
+
+    .quarto{
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+        gap: 0;
+    }
+
+    .quarto img{
+        width: 95%;
+    }
+
+    #quarto2 img {
+        order: 1;
+    }
+    
+    #quarto2 .quartosDescricao{
+        order: 2;
+    }
+
+    .redes-sociais{
+        height: 9vh;
+    }
+
+    .redes-sociais img{
+        padding: 0vh 3vw 0vh 3vw;
+    }
 }
+
+
