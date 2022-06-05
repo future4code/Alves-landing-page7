@@ -1,6 +1,6 @@
 /* Estilos Gerais */
 :root {
-    --primary: #00BFFF;
+    --primary: #132235;
     --secondary: #959890;
     --text-color: #fff;
     --text-secondary:#000;
@@ -21,7 +21,8 @@ header {
     align-items: center;
     height: 100vh;
     padding-top: 8vh;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1.6fr;
+    grid-template-rows: 1fr 1fr;
     background: linear-gradient(rgba(0,0,0,.8), rgba(0,0,0,.8)),
     url("./img/Two\ Bed\ Flat\ Bedroom\ One.jpg");
     font-size: 5vh;
@@ -41,18 +42,131 @@ header img{
 }
 
 form{
-    display: grid;
-}
-/* Event form */
-#event-description {
-    background: linear-gradient(rgba(0,0,0,.8), rgba(0,0,0,.8)),
-    url("./img/quarto1.jpg");
-    background-position: center;
-    background-size: cover;
-    height: 85vh;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    color:var(--text-color);
+    font-size: 3vh;
+    background-color: var(--secondary);
+    opacity: 0.8;
+    max-width: 60%;
+    padding: 2.5vw;
 }
 
+form p {
+    font-size: 1em;
+    color: var(--text-secondary);
+    margin-bottom: 1em;
+}
+
+.grupoForm{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0.8em;
+}
+
+.grupoForm input,
+.grupoForm select {
+    padding: 6px 8px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+}
+
+.btn {
+    background-color: var(--primary);
+    color: var(--text-color);
+    text-transform: uppercase;
+    width: 100%;
+    padding: 12px;
+    border: none;
+    cursor: pointer;
+    opacity: 0.7;
+}
+  
+.btn:hover {
+    opacity: 1;
+}
+  
+
+/* Estilos Main*/
+
+
+
+
+
+/* Estilos footer*/
+footer{
+    height: 20vh;
+    display: grid;
+}
+
+.redes-sociais{ 
+    display: grid;
+    align-items: center;
+    text-align: center;
+    background-color: var(--primary);
+    height: 6vh;
+    width: 100%;
+    display: flex;
+    position: fixed;
+    bottom: 0;
+    justify-content: center;
+    align-content: end;
+}
+
+.redes-sociais img{
+    opacity: 0.5;
+    margin: 0vh 0.4vw 0vh 0.4vw;
+    height: 30px;
+    border-radius: 6px;
+}
+
+.redes-sociais img:hover{
+    opacity: 1;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* Estilos responsividade - MANTER NO FINAL  */
+@media screen and (min-device-width : 320px) and (max-device-width : 480px){
+    header{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-items: center;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        padding-top: 0;
+        height: 100%;
+        width: 100%;
+    }
+
+    header img{
+        padding-top: 30%;
+        padding-bottom: 40%;
+        height: 100%;
+        width: 100%;
+    }
+
+    p{
+        text-align: center;
+    }
+
+    form{
+        flex-wrap: wrap;
+        justify-items: center;
+        align-items: center;
+        max-width: 100%;
+        padding: 10vw;
+    }
+
+    .slogan{
+        height: 100%;
+    }
+}
