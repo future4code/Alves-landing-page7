@@ -237,9 +237,13 @@ footer {
         width: 100%;
     }
 
+    form{
+        order: 2;
+    }
+
     header img{
-        padding-top: 30%;
-        padding-bottom: 40%;
+        padding-top: 15%;
+        padding-bottom: 5%;
         height: 100%;
         width: 100%;
     }
@@ -259,6 +263,7 @@ footer {
     .slogan{
         text-align: center;
         height: 100%;
+        padding: 10% 0 10% 0 ;
     }
 
     .intro{
@@ -292,11 +297,7 @@ footer {
         width: 95%;
     }
 
-    #quarto2 img {
-        order: 1;
-    }
-    
-    #quarto2 .quartosDescricao{
+    .quartosDescricao{
         order: 2;
     }
 
