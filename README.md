@@ -1,1 +1,1 @@
-Link do surge: cloudy-morning.surge.sh
+Link do surge: https://fuzzy-jewel.surge.sh/
