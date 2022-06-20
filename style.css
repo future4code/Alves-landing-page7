@@ -1,0 +1,313 @@
+/* Estilos Gerais */
+:root {
+    --primary: #132235;
+    --secondary: #959890;
+    --text-color: #fff;
+    --text-secondary:#000;
+    --text-tertiary: #5D5D5D;
+}
+
+* {
+    font-family: "Montserrat";
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos Header */
+header {
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    height: 100vh;
+    padding-top: 8vh;
+    grid-template-columns: 1fr 1.6fr;
+    grid-template-rows: 1fr 1fr;
+    background: linear-gradient(rgba(0,0,0,.8), rgba(0,0,0,.8)),
+    url("./img/Two\ Bed\ Flat\ Bedroom\ One.jpg");
+    font-size: 5vh;
+    background-position: center;
+    background-size: cover;
+    color:var(--text-color);
+}
+
+header img{
+    opacity: 0.6;
+}
+
+.slogan{
+    height: 10vh;
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+form{
+    font-size: 3vh;
+    background-color: var(--secondary);
+    opacity: 0.8;
+    max-width: 60%;
+    padding: 2.5vw;
+}
+
+form p {
+    font-size: 1em;
+    color: var(--text-secondary);
+    margin-bottom: 1em;
+}
+
+.grupoForm{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0.8em;
+}
+
+.grupoForm input,
+.grupoForm select {
+    padding: 6px 8px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+}
+
+.btn {
+    background-color: var(--primary);
+    color: var(--text-color);
+    text-transform: uppercase;
+    width: 100%;
+    padding: 12px;
+    border: none;
+    cursor: pointer;
+    opacity: 0.7;
+}
+  
+.btn:hover {
+    opacity: 1;
+}
+  
+
+/* Estilos Main*/
+.intro{
+    display: flex;
+    height: 30vh;
+    padding: 3vw;
+    margin-right: 5vw;
+    margin-left: 5vw;
+    text-align: justify;
+    font-size: 3vh;
+}
+
+.intro h2{
+    padding-right: 3vw;
+}
+
+#beneficios{
+    width: 80%;
+    margin: 0 auto;
+}
+
+#beneficios h2 {
+    background-color: var(--secondary);
+    text-align: center;
+    padding: 2em;
+    font-weight: 600;
+  }
+  
+.beneficios {
+    display: flex;
+    justify-content: space-around;
+    padding: 4em;
+    width: 80%;
+    gap: 2vw;
+    margin: 0 auto;
+}
+  
+.beneficio {
+    text-align: justify;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 30%;
+    color: var(--text-tertiary);
+}
+
+.beneficio p{
+    padding-top: 2vh;
+}
+  
+.beneficio img {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 1em;
+}
+
+
+#quartos {
+    width: 80%;
+    margin: 0 auto;
+}
+
+#quartos h2 {
+    background-color: var(--secondary);
+    text-align: center;
+    padding: 2em;
+    font-weight: 600;
+    margin-bottom: 2em;
+}
+  
+.quarto {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 5%;
+    margin-bottom: 4em;
+}
+  
+.quarto img {
+    width: 40%;
+}
+
+.quarto h3 {
+    margin-bottom: 1em;
+    font-size: 2em;
+    font-weight: 500;
+}
+
+.quartosDescricao {
+    width: 100%;
+    padding-left: 2em;
+}
+
+.quartosDescricao ul {
+    list-style-position: inside;
+}
+  
+.quartosDescricao ul li {
+    margin-bottom: 0.4em;
+}
+ 
+
+/* Estilos footer*/
+footer {
+    text-align: center;
+    color: var(--secondary);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.redes-sociais{ 
+    display: grid;
+    align-items: center;
+    text-align: center;
+    background-color: var(--primary);
+    height: 7vh;
+    width: 100%;
+    display: flex;
+    bottom: 0;
+    justify-content: center;
+    align-content: end;
+}
+
+.redes-sociais img{
+    opacity: 0.5;
+    margin: 0vh 0.4vw 0vh 0.4vw;
+    height: 30px;
+    border-radius: 6px;
+}
+
+.redes-sociais img:hover{
+    opacity: 1;
+}
+
+
+/* Estilos responsividade - MANTER NO FINAL  */
+@media screen and (min-device-width : 320px) and (max-device-width : 480px){
+    header{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-items: center;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        padding-top: 0;
+        height: 100%;
+        width: 100%;
+    }
+
+    form{
+        order: 2;
+    }
+
+    header img{
+        padding-top: 15%;
+        padding-bottom: 5%;
+        height: 100%;
+        width: 100%;
+    }
+
+    p{
+        text-align: center;
+    }
+
+    form{
+        flex-wrap: wrap;
+        justify-items: center;
+        align-items: center;
+        max-width: 100%;
+        padding: 10vw;
+    }
+
+    .slogan{
+        text-align: center;
+        height: 100%;
+        padding: 10% 0 10% 0 ;
+    }
+
+    .intro{
+        height: 100%;
+        flex-direction: column;
+        align-items: center;
+        width: auto;
+        padding: 2em;
+    }
+
+    .beneficios {
+        flex-direction: column;
+        align-items: center;
+        width: auto;
+        padding: 2em;
+    }
+    
+    .beneficio {
+        max-width: 100%;
+        margin-bottom: 2em;
+    }
+
+    .quarto{
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+        gap: 0;
+    }
+
+    .quarto img{
+        width: 95%;
+    }
+
+    .quartosDescricao{
+        order: 2;
+    }
+
+    .redes-sociais{
+        height: 9vh;
+    }
+
+    .redes-sociais img{
+        padding: 0vh 3vw 0vh 3vw;
+    }
+}
+
+
